@@ -1,1 +1,1 @@
-from gpw import pronounceable_passwd
+from .gpw import pronounceable_passwd
