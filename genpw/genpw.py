@@ -1,4 +1,4 @@
-""" GPW - Generate pronounceable passwords """
+""" GENPW - Generate pronounceable passwords """
 
 # This program uses statistics on the frequency of three-letter sequences in
 # English to generate passwords.  The statistics are generated from your

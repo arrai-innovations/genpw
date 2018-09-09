@@ -1,2 +1,2 @@
-# gpw.py
+# genpw
 Generate pronouncable passwords in Python
