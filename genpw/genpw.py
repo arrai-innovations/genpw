@@ -12,6 +12,8 @@
 # THVV 07/30/97 fixed for Netscape 4.0
 # THVV 11/27/09 ported to Javascript
 # CB 10/12/16 ported to Python
+# python port Copyright (C) 2017 Emergence by Design Inc. - All Rights Reserved
+# python port Copyright (C) 2020 Arrai Innovations Inc. - All Rights Reserved
 
 from csv import reader
 from os.path import dirname, join as path_join

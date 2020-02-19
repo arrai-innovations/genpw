@@ -83,9 +83,9 @@ celerybeat-schedule
 .env
 
 # virtualenv
-.venv
-venv/
-ENV/
+.venv*
+venv*/
+ENV*/
 
 # Spyder project settings
 .spyderproject
@@ -102,3 +102,21 @@ ENV/
 
 # Editor backup files
 *~
+
+### custom JetBrains .gitignore rules.
+### Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+## ignore all files
+.idea/*
+
+## except
+!.idea/.gitignore
+
+# know that there is a git repo in the root.
+!.idea/vcs.xml
+
+# enable the watcher task named "Black" by default.
+!.idea/watcherTasks.xml
+
+# have the "Black Scope" scope by default.
+!.idea/scopes
