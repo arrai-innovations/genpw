@@ -38,9 +38,12 @@ $ pip install genpw
 ## Usage
 
 ```python
-from genpw import pronounceable_passwd
-password_length = 12
-password = pronounceable_passwd(password_length)
+>>> from genpw import pronounceable_passwd
+>>> pronounceable_passwd.__doc__
+' Return a password of length in range [3, max(pwl, 3)]. '
+>>> password_length = 10
+>>> pronounceable_passwd(password_length)
+'roleannexa'
+>>> pronounceable_passwd(7)
+'listabo'
 ```
-
-The returned password will be between 3 and `max(password_length, 3)` inclusively.
