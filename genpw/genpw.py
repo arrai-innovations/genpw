@@ -64,6 +64,7 @@ def first_three_chrs(_alphabet, _trigram, ranno):
                     output += _alphabet[ch2]
                     output += _alphabet[ch3]
                     return output, rotating_sum
+    return output, rotating_sum
 
 
 def pronounceable_passwd(pwl):
