@@ -19,7 +19,6 @@ setup(
     author="Arrai Innovations",
     author_email="support@arrai.com",
     packages=["genpw"],
-    scripts=["genpw/genpw.py"],
     install_requires=install_requires,
     license="LICENSE",
     test_suite="tests",
