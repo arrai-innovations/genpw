@@ -18,7 +18,14 @@
 from csv import reader
 from os.path import dirname
 from os.path import join as path_join
-from random import random
+
+try:
+    from secrets import randbelow
+    from functools import partial
+
+    random = partial(randbelow, 2)
+except ImportError:
+    from random import random
 
 
 class TrigramLoader(object):
