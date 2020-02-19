@@ -1,13 +1,13 @@
 # genpw
 Generate pronounceable passwords in Python.
 
-![genpw logo](https://docs.arrai-dev.com/genpw/readme/genpw.png)
+![genpw logo](https://docs.arrai-dev.com/genpw/readme/genpw.png) 
 
 This program uses statistics on the frequency of three-letter sequences in English to generate passwords.
 
 Based off gpw for javascript: https://www.multicians.org/thvv/gpw.html
 
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg?style=for-the-badge)](https://github.com/psf/black)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg?style=for-the-badge)](https://github.com/psf/black) [![PYPI](https://img.shields.io/pypi/v/genpw?style=for-the-badge)](https://pypi.org/project/genpw/)
 
 ###### master
 
