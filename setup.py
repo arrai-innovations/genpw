@@ -29,7 +29,7 @@ setup(
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "License :: OSI Approved :: BSD License",
-        "Environment :: Console",
         "Intended Audience :: Developers",
     ],
+    include_package_data=True,
 )
