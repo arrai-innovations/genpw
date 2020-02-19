@@ -17,8 +17,6 @@ Based off gpw for javascript: https://www.multicians.org/thvv/gpw.html
 
 ![Tests](https://docs.arrai-dev.com/genpw/master.python36.svg) [![Coverage](https://docs.arrai-dev.com/genpw/master.python36.coverage.svg)](https://docs.arrai-dev.com/genpw/htmlcov_master_python36/)
 
-![Tests](https://docs.arrai-dev.com/genpw/master.python35.svg) [![Coverage](https://docs.arrai-dev.com/genpw/master.python35.coverage.svg)](https://docs.arrai-dev.com/genpw/htmlcov_master_python35/)
-
 ![Flake8](https://docs.arrai-dev.com/genpw/master.flake8.svg)
 
 ###### develop
@@ -28,8 +26,6 @@ Based off gpw for javascript: https://www.multicians.org/thvv/gpw.html
 ![Tests](https://docs.arrai-dev.com/genpw/develop.python37.svg) [![Coverage](https://docs.arrai-dev.com/genpw/develop.python37.coverage.svg)](https://docs.arrai-dev.com/genpw/htmlcov_develop_python37/)
 
 ![Tests](https://docs.arrai-dev.com/genpw/develop.python36.svg) [![Coverage](https://docs.arrai-dev.com/genpw/develop.python36.coverage.svg)](https://docs.arrai-dev.com/genpw/htmlcov_develop_python36/)
-
-![Tests](https://docs.arrai-dev.com/genpw/develop.python35.svg) [![Coverage](https://docs.arrai-dev.com/genpw/develop.python35.coverage.svg)](https://docs.arrai-dev.com/genpw/htmlcov_develop_python35/)
 
 ![Flake8](https://docs.arrai-dev.com/genpw/develop.flake8.svg)
 
