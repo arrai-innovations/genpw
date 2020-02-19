@@ -31,4 +31,5 @@ setup(
         "License :: OSI Approved :: BSD License",
         "Intended Audience :: Developers",
     ],
+    include_package_data=True,
 )
