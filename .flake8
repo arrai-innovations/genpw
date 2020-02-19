@@ -1,0 +1,31 @@
+[flake8]
+enable-extensions =
+    # Enables flake8-logging-format
+    G
+exclude = */migrations/*
+extend-ignore =
+    # (flake8-builtins) builtin names used as class attributes (e.g. `id`, `type`, `help`)
+    A003
+    # (flake8) Black incompatibility - see https://github.com/PyCQA/pycodestyle/issues/373
+    E203
+    # (flake8-logging-format) false-positives for anything calling `.warn()`
+    G010
+max-complexity = 11
+max-line-length = 120
+# flake8-black
+black-config = .black
+# pep8-naming
+ignore-names =
+    # defaults
+    setUp
+    tearDown
+    setUpClass
+    tearDownClass
+    setUpTestData
+    failureException
+    longMessage
+    maxDiff
+# flake8-import-order
+application-import-names =
+    genpw
+import-order-style = pycharm
