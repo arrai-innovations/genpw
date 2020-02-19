@@ -3,11 +3,6 @@ orbs:
   utils: arrai/utils@1.5.0
   flake8: arrai/flake8@6.0.0
 executors:
-  python35:
-    environment:
-        LANG: en_US.UTF-8
-    docker:
-     - image: circleci/python:3.5
   python36:
     environment:
         LANG: en_US.UTF-8
@@ -92,10 +87,6 @@ workflows:
   test:
     jobs:
       - pythontests:
-          name: python35
-          context: arrai-global
-          executor: python35
-      - pythontests:
           name: python36
           context: arrai-global
           executor: python36
@@ -113,10 +104,6 @@ workflows:
           wd: ~/project
   weekly:
     jobs:
-      - pythontests:
-          name: python35
-          context: arrai-global
-          executor: python35
       - pythontests:
           name: python36
           context: arrai-global

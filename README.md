@@ -46,3 +46,5 @@ from genpw import pronounceable_passwd
 password_length = 12
 password = pronounceable_passwd(password_length)
 ```
+
+The returned password will be between 3 and `max(password_length, 3)` inclusively.

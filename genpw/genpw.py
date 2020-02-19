@@ -18,14 +18,7 @@
 from csv import reader
 from os.path import dirname
 from os.path import join as path_join
-
-try:
-    from secrets import randbelow
-    from functools import partial
-
-    random = partial(randbelow, 2)
-except ImportError:
-    from random import random
+from secrets import randbelow
 
 
 class TrigramLoader(object):
@@ -75,15 +68,14 @@ def first_three_chrs(_alphabet, _trigram, ranno):
 
 
 def pronounceable_passwd(pwl):
-    """ Return a password of length pwl. """
+    """ Return a password of length in range [3, max(pwl, 3)]. """
     _alphabet = "abcdefghijklmnopqrstuvwxyz"
 
     # letter frequencies
     _trigram = TrigramLoader.load_trigrams()
 
     # Pick a random starting point.
-    pik = random()  # random number [0,1]
-    ranno = pik * 125729.0
+    ranno = randbelow(125730)
     output, rotating_sum = first_three_chrs(_alphabet, _trigram, ranno)
 
     # Now do a random walk.
@@ -94,10 +86,10 @@ def pronounceable_passwd(pwl):
         rotating_sum = 0
         for ch3 in range(0, 26):
             rotating_sum += _trigram[ch1][ch2][ch3]
-        if rotating_sum == 0:
-            break  # exit while loop
-        pik = random()
-        ranno = pik * rotating_sum
+        if not rotating_sum:
+            # the trigrams don't know where to go next, end early
+            return output
+        ranno = randbelow(rotating_sum)
         rotating_sum = 0
         for ch3 in range(0, 26):
             rotating_sum += _trigram[ch1][ch2][ch3]
