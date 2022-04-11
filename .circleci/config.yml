@@ -116,7 +116,7 @@ workflows:
           context: arrai-global
           executor: python38
       - pythontests:
-          name: python38
+          name: python39
           context: arrai-global
           executor: python39
       - flake8/flake8:
