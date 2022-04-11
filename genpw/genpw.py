@@ -22,25 +22,27 @@ from secrets import randbelow
 
 
 class TrigramLoader(object):
-    """ Wrapper for loading the word frequency data. """
+    """Wrapper for loading the word frequency data."""
 
     trigrams = None
 
     @classmethod
     def is_loaded(cls):
-        """ Return whether the trigrams have been loaded. """
+        """Return whether the trigrams have been loaded."""
         return cls.trigrams is not None
 
     @classmethod
     def load_trigrams(cls):
-        """ Load the trigrams from the data files. """
+        """Load the trigrams from the data files."""
         if cls.is_loaded():
             return cls.trigrams
 
         trigrams = []
         for char_one in [chr(x) for x in range(ord("A"), ord("Z") + 1)]:
             char_data = []
-            trigram_file = open(path_join(dirname(__file__), "trigrams", "{}.csv".format(char_one)))
+            trigram_file = open(
+                path_join(dirname(__file__), "trigrams", "{}.csv".format(char_one))
+            )
             trigram_reader = reader(trigram_file, delimiter="\t")
             for data_line in trigram_reader:
                 if data_line:
@@ -68,7 +70,7 @@ def first_three_chrs(_alphabet, _trigram, ranno):
 
 
 def pronounceable_passwd(pwl):
-    """ Return a password of length in range [3, max(pwl, 3)]. """
+    """Return a password of length in range [3, max(pwl, 3)]."""
     _alphabet = "abcdefghijklmnopqrstuvwxyz"
 
     # letter frequencies
