@@ -40,9 +40,7 @@ class TrigramLoader(object):
         trigrams = []
         for char_one in [chr(x) for x in range(ord("A"), ord("Z") + 1)]:
             char_data = []
-            trigram_file = open(
-                path_join(dirname(__file__), "trigrams", "{}.csv".format(char_one))
-            )
+            trigram_file = open(path_join(dirname(__file__), "trigrams", "{}.csv".format(char_one)))
             trigram_reader = reader(trigram_file, delimiter="\t")
             for data_line in trigram_reader:
                 if data_line:
