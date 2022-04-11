@@ -11,6 +11,8 @@ Based off gpw for javascript: https://www.multicians.org/thvv/gpw.html
 
 ###### master
 
+![Tests](https://docs.arrai-dev.com/genpw/artifacts/master/python310.svg) [![Coverage](https://docs.arrai-dev.com/genpw/artifacts/master/python310.coverage.svg)](https://docs.arrai-dev.com/genpw/artifacts/master/htmlcov_python310/)
+
 ![Tests](https://docs.arrai-dev.com/genpw/artifacts/master/python39.svg) [![Coverage](https://docs.arrai-dev.com/genpw/artifacts/master/python39.coverage.svg)](https://docs.arrai-dev.com/genpw/artifacts/master/htmlcov_python39/)
 
 ![Tests](https://docs.arrai-dev.com/genpw/artifacts/master/python38.svg) [![Coverage](https://docs.arrai-dev.com/genpw/artifacts/master/python38.coverage.svg)](https://docs.arrai-dev.com/genpw/artifacts/master/htmlcov_python38/)
@@ -22,6 +24,8 @@ Based off gpw for javascript: https://www.multicians.org/thvv/gpw.html
 ![Flake8](https://docs.arrai-dev.com/genpw/artifacts/master/flake8.svg)
 
 ###### develop
+
+![Tests](https://docs.arrai-dev.com/genpw/artifacts/develop/python310.svg) [![Coverage](https://docs.arrai-dev.com/genpw/artifacts/develop/python310.coverage.svg)](https://docs.arrai-dev.com/genpw/artifacts/develop/htmlcov_python310/)
 
 ![Tests](https://docs.arrai-dev.com/genpw/artifacts/develop/python39.svg) [![Coverage](https://docs.arrai-dev.com/genpw/artifacts/develop/python39.coverage.svg)](https://docs.arrai-dev.com/genpw/artifacts/develop/htmlcov_python39/)
 
